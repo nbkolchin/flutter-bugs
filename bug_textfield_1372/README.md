@@ -31,6 +31,22 @@ widget.filterController.addListener(() {
 
 But this trick doesn't help in provided sample...
 
+## Flutter environment
+
+```
+bash-3.2$ flutter doctor
+Doctor summary (to see all details, run flutter doctor -v):
+[✓] Flutter (Channel stable, v1.12.13+hotfix.5, on Mac OS X 10.14.6 18G1012, locale en-RU)
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 29.0.2)
+[✓] Xcode - develop for iOS and macOS (Xcode 11.3)
+[✓] Android Studio (version 3.5)
+[✓] VS Code (version 1.40.2)
+[✓] Connected device (1 available)
+
+• No issues found!
+```
+
 ## Exception dump
 
 ```

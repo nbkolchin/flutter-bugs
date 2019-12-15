@@ -25,14 +25,14 @@ class DemoBug1372 extends StatefulWidget {
 
 class _DemoBug1372 extends State<DemoBug1372> with SingleTickerProviderStateMixin {
   bool _searchMode = false;
-  TabController _tabController;
 
   @override
   void initState() {
     super.initState();
+    /*
     widget.filterController.addListener(() {
-      final text = widget.filterController.text;
       if(widget.filterController.value.selection == null) {
+        final text = widget.filterController.text;
         widget.filterController.value = widget.filterController.value.copyWith(
             text: text,
             selection: TextSelection(baseOffset: text.length, extentOffset: text.length),
@@ -40,6 +40,7 @@ class _DemoBug1372 extends State<DemoBug1372> with SingleTickerProviderStateMixi
         );
       }
     });
+    */
   }
 
   @override
@@ -52,14 +53,16 @@ class _DemoBug1372 extends State<DemoBug1372> with SingleTickerProviderStateMixi
                   OutlineButton(
                       child: Text(_searchMode ? "Hide textfield" : "Show textfield"),
                       onPressed: () {
-                        setState(() { _searchMode = !_searchMode; });
+                        setState(() {
+                          _searchMode = !_searchMode;
+                        });
                       },
                   ),
                   Visibility(
                       visible: _searchMode,
                       child: TextField(
                           controller: widget.filterController,
-                          // autofocus: true,
+                          autofocus: true,
                           decoration: new InputDecoration(
                               prefixIcon: new Icon(Icons.search),
                               hintText: 'Search...',
