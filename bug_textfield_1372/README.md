@@ -1,6 +1,6 @@
 # bug_textfield_1372
 
-Demonstration for flutter bug 
+Demonstration for flutter bug https://github.com/flutter/flutter/issues/47089
 
 ## Steps to reproduce
 
